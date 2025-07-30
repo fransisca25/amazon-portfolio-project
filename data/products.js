@@ -641,7 +641,7 @@ const products = [
       "tissues"
     ]
   },
-  {
+ {
     id: "bc2847e9-5323-403f-b7cf-57fde044a955",
     image: "images/products/men-cozy-fleece-zip-up-hoodie-red.jpg",
     name: "Men's Full-Zip Hooded Fleece Sweatshirt",
@@ -655,6 +655,33 @@ const products = [
       "hoodies",
       "apparel",
       "mens"
+    ]
+  }, 
+   {
+    id: "fnsfnpp-4366-0899-h781-9dser89ja3jaw309",
+    image: "images/products/umbrella.jpg",
+    name: "Umbrella - Engineered to Withstand 85MPH Winds",
+    rating: {
+      stars: 4.5,
+      count: 9874
+    },
+    priceCents: 2299,
+    keywords: [
+      "umbrella"
+    ]
+  }, 
+   {
+    id: "oiewfjiao-5389-7389-k324-aniwh8wah9oeins9924",
+    image: "images/products/backpack.jpg",
+    name: "Winterlace 24pack Backpack 43.2cm (17 inch)",
+    rating: {
+      stars: 4.5,
+      count: 2890
+    },
+    priceCents: 12999,
+    keywords: [
+      "backpack", 
+      "bag"
     ]
   }
 ];
