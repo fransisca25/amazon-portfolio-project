@@ -1,9 +1,10 @@
-import {calculateCartQuantity, cart, removeFromCart, updateQuantity, updateDeliveryOption} from '../../data/cart.js';
-import {products, getProduct} from '../../data/products.js';
-import {formatCurrency} from '../utils/money.js';
+import { calculateCartQuantity, cart, removeFromCart, updateQuantity, updateDeliveryOption } from '../../data/cart.js';
+import { products, getProduct } from '../../data/products.js';
+import { formatCurrency } from '../utils/money.js';
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
-import {deliveryOptions, getDeliveryOption} from '../../data/deliveryOptions.js';
+import { deliveryOptions, getDeliveryOption } from '../../data/deliveryOptions.js';
 import { renderPaymentSummary } from './paymentSummary.js';
+import { renderCheckoutHeader } from './checkoutHeader.js';
 
 
 export function renderOrderSummary() {
@@ -171,8 +172,10 @@ export function renderOrderSummary() {
         updateQuantity(productId, updatedQuantity);
         document.querySelector(`.js-label-quantity-${productId}`).innerHTML = updatedQuantity;
 
-        const cartQuantity = calculateCartQuantity();
-        document.querySelector('.js-return-home-link').innerHTML= `${cartQuantity} items`;
+        // const cartQuantity = calculateCartQuantity();
+        // document.querySelector('.js-return-home-link').innerHTML= `${cartQuantity} items`;
+
+        renderCheckoutHeader();
     }
 
     document.querySelectorAll('.js-delivery-options').forEach((element) => {
