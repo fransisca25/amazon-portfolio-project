@@ -153,6 +153,11 @@ function saveUpdatedQuantity(link) {
     const inputQuantity = document.querySelector(`.js-quantity-input-${productId}`);
     const updatedQuantity = Number(inputQuantity.value);
 
+    if ((updatedQuantity <= 0 || updatedQuantity >= 1000)) {
+        alert('Quantity must be more than 0 and less than 1000');
+        return;
+    }
+
     container.classList.remove('is-editing-quantity');
     updateQuantity(productId, updatedQuantity);
     document.querySelector(`.js-label-quantity-${productId}`).innerHTML = updatedQuantity;
