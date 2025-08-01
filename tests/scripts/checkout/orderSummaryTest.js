@@ -1,5 +1,5 @@
-import { cart } from "../../data/cart.js";
-import { renderOrderSummary } from "../../scripts/checkout/orderSummary.js";
+import { cart } from "../../../data/cart.js";
+import { renderOrderSummary } from "../../../scripts/checkout/orderSummary.js";
 
 
 describe('test suite: renderOrderSummary', () => {

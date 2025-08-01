@@ -1,6 +1,6 @@
 import { Product, Clothing, Appliance } from '../../data/products.js'
 
-describe('test suite: Productc class', () => {
+describe('test suite: Product class', () => {
     let product;
     
     beforeEach(() => {
