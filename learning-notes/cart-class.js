@@ -116,10 +116,6 @@ class Cart {
 const cart = new Cart('cart-oop');
 const businessCart = new Cart('cart-business');
 
-// syntax error
-// can not acces #localStorageKey outside the class
-// cart.#localStorageKey = 'test';
-
 console.log(cart);
 console.log(businessCart);
 console.log(businessCart instanceof Cart);

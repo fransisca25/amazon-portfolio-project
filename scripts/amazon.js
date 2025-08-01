@@ -1,6 +1,6 @@
-import * as cartModule from '../data/cart.js';
+// import * as cartModule from '../data/cart.js';
+import { cart } from '../data/cart.js';
 import {products} from '../data/products.js';
-import {formatCurrency} from './utils/money.js';
 
 let productsHTML = '';
 
@@ -63,7 +63,7 @@ document.querySelector('.js-products-grid').innerHTML = productsHTML;
 updateCartQuantity();
 
 function updateCartQuantity() {
-    const cartQuantity = cartModule.calculateCartQuantity();
+    const cartQuantity = cart.calculateCartQuantity();
 
     document.querySelector('.js-cart-quantity').innerHTML = cartQuantity === 0 ? '0' : cartQuantity;
 }
@@ -95,7 +95,7 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     button.addEventListener('click', () => {
         const { productId } = button.dataset;
 
-        cartModule.addToCart(productId);
+        cart.addToCart(productId);
         updateCartQuantity();
         messageTimeouts(productId);
     });
