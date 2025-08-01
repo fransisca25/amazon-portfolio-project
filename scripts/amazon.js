@@ -18,14 +18,14 @@ products.forEach((product) => {
 
             <div class="product-rating-container">
                 <img class="product-rating-stars"
-                    src="images/ratings/rating-${product.rating.stars * 10}.png">
+                    src="${product.getStarsUrl()}">
                 <div class="product-rating-count link-primary">
                     ${product.rating.count}
                 </div>
             </div>
 
             <div class="product-price">
-                $${formatCurrency(product.priceCents)}
+                ${product.getPrice()}
             </div>
 
             <div class="product-quantity-container">
@@ -63,7 +63,7 @@ updateCartQuantity();
 function updateCartQuantity() {
     const cartQuantity = cartModule.calculateCartQuantity();
 
-    document.querySelector('.js-cart-quantity').innerHTML = cartQuantity === 0 ? '' : cartQuantity;
+    document.querySelector('.js-cart-quantity').innerHTML = cartQuantity === 0 ? '0' : cartQuantity;
 }
 
 function messageTimeouts(productId) {
