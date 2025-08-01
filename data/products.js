@@ -1,4 +1,4 @@
-import { formatCurrency } from "../scripts/utils/money.js";
+import { formatCurrency } from '../scripts/utils/money.js';
 
 
 export function getProduct(productId) {
@@ -13,7 +13,7 @@ export function getProduct(productId) {
     return matchingProduct;
 }
 
-class Product {
+export class Product {
     id;
     image;
     name;
@@ -42,11 +42,12 @@ class Product {
 }
 
 // child class of 'Product' class
-class Clothing extends Product {
+export class Clothing extends Product {
     sizeChartLink;
 
     constructor(productDetails) {
         super(productDetails);
+        this.type = productDetails.type;
         this.sizeChartLink = productDetails.sizeChartLink;
     }
 
@@ -60,22 +61,23 @@ class Clothing extends Product {
     }
 }
 
-class Appliance extends Product {
-  instructionsLink;
-  warrantyLink;
+export class Appliance extends Product {
+    instructionsLink;
+    warrantyLink;
 
-  constructor(productDetails) {
-      super(productDetails);
-      this.instructionsLink = productDetails.instructionsLink;
-      this.warrantyLink = productDetails.warrantyLink;
-  }
+    constructor(productDetails) {
+        super(productDetails);
+        this.type = productDetails.type;
+        this.instructionsLink = productDetails.instructionsLink;
+        this.warrantyLink = productDetails.warrantyLink;
+    }
 
-  extraInfoHTML() {
-      return `
-          <a href="${this.instructionsLink}" target="_blank">Instructions</a>
-          <a href="${this.warrantyLink}" target="_blank">Warranty</a>
-      `
-  }
+    extraInfoHTML() {
+        return `
+            <a href="${this.instructionsLink}" target="_blank">Instructions</a>
+            <a href="${this.warrantyLink}" target="_blank">Warranty</a>
+        `
+    }
 }
 
 export const products = [
