@@ -58,6 +58,10 @@ describe('test suite: paymentSummary', () => {
         }];
     });
 
+    afterEach(() => {
+        document.querySelector('.js-test-container').innerHTML = '';
+    });
+
     it('check all payment element in renderPaymentSummary', () => {
         renderPaymentSummary();
 
