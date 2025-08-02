@@ -18,6 +18,10 @@ describe('test suite: renderCheckoutHeader', () => {
             deliveryOptionId: '1'
         }];
     });
+    
+    afterEach(() => {
+        document.querySelector('.js-test-container').innerHTML = '';
+    });
 
     it('check checkout header render the correct quantity', () => {
         renderCheckoutHeader();

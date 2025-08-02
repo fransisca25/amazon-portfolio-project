@@ -13,12 +13,6 @@ describe('test suite: paymentSummary', () => {
 
         document.querySelector('.js-test-container').innerHTML = `
             <div class="js-payment-summary"></div>
-            <div class="js-payment-summary-quantity"></div>
-            <div class="js-payment-summary-price"></div>
-            <div class="js-payment-summary-shipping"></div>
-            <div class="js-payment-summary-before-tax"></div>
-            <div class="js-payment-summary-tax"></div>
-            <div class="js-payment-summary-total"></div>
         `;
 
         product = new Product({
