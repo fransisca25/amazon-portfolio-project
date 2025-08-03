@@ -1,6 +1,7 @@
-import { Product } from "../../../data/products.js";
+import { Product, products } from "../../../data/products.js";
 import { cart } from "../../../data/cart.js";
 import { renderPaymentSummary } from "../../../scripts/checkout/paymentSummary.js";
+import { loadProductsFetch } from '../../../data/products.js';
 
 
 describe('test suite: paymentSummary', () => {
@@ -8,6 +9,10 @@ describe('test suite: paymentSummary', () => {
     let product;
     let deliveryOptions;
     
+    beforeAll(async () => {
+        await loadProductsFetch();
+    });
+
     beforeEach(() => {
         spyOn(localStorage, 'setItem');
 
@@ -30,6 +35,10 @@ describe('test suite: paymentSummary', () => {
             "apparel"
             ]
         });
+
+        // make sure products array empty for test
+        products.length = 0; 
+        products.push(product);
 
         cart.cartItems = [{
             productId: productId, 
