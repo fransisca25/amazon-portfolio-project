@@ -1,20 +1,36 @@
 import { renderOrderSummary } from "./checkout/orderSummary.js";
 import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 import { loadProductsFetch } from "../data/products.js";
-import { loadCart } from "../data/cart.js";
 
-Promise.all([
-    loadProductsFetch(),
-    new Promise((resolve) => {
-        loadCart(() => {
-            resolve();
-        });
-    })
-]).then((values) => {
-    console.log(values);
+
+async function loadPage() {
+    await loadProductsFetch();
+    console.log('load products done');
+
     renderOrderSummary();
     renderPaymentSummary();
-});
+}
+
+loadPage();
+
+
+// async make a function return Promise
+// await lets us write asynchronous code like normal code
+
+// Promise.all([
+//     loadProductsFetch(),
+//     new Promise((resolve) => {
+//         loadCart(() => {
+//             resolve();
+//         });
+//     })
+// ]).then((values) => {
+//     console.log(values);
+//     renderOrderSummary();
+//     renderPaymentSummary();
+// });
+
+
 
 /* Use Promise.all() instead!!!
 new Promise((resolve) => {

@@ -103,33 +103,28 @@ export function loadProductsFetch() {
     return promise;
 }
 
-/*
-loadProductsFetch().then(() => {
-    console.log('next step');
-});
-*/
 
-export function loadProducts(fun) {
-    const xhr = new XMLHttpRequest();
+// export function loadProducts(fun) {
+//     const xhr = new XMLHttpRequest();
 
-    xhr.addEventListener('load', () => {
-        products = JSON.parse(xhr.response).map((productDetails) => {
-            if (productDetails.type === 'clothing') {
-                return new Clothing(productDetails);
-            } else if (productDetails.type === 'appliances') {
-                return new Appliance(productDetails);
-            }
-            return new Product(productDetails);
-        });
+//     xhr.addEventListener('load', () => {
+//         products = JSON.parse(xhr.response).map((productDetails) => {
+//             if (productDetails.type === 'clothing') {
+//                 return new Clothing(productDetails);
+//             } else if (productDetails.type === 'appliances') {
+//                 return new Appliance(productDetails);
+//             }
+//             return new Product(productDetails);
+//         });
 
-        console.log('load products');
+//         console.log('load products');
 
-        fun();
-    });
+//         fun();
+//     });
 
-    xhr.open('GET', 'https://supersimplebackend.dev/products');
-    xhr.send();
-}
+//     xhr.open('GET', 'https://supersimplebackend.dev/products');
+//     xhr.send();
+// }
 
 
 /*
