@@ -17,6 +17,7 @@ loadProductsFetch().then(() => {
     updateCartQuantity();
 });
 
+
 function renderProductGrid() {
     let productsHTML = '';
 
