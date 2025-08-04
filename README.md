@@ -68,12 +68,22 @@ The AI chatbot acting as a simple customer service assistant.
 
 ---
 
-## 📸 Preview and Video
+## 📸 Preview Video
 
+YouTube video: 
+[amazon-portfolio-project preview video](https://youtu.be/cPB5YyRuAwA?si=Jc4OREn1LhfsUfIa)
+
+---
+
+## Future Work
+- Improve search functionality (currently only works with the keyword "socks").
+- Add JavaScript to orders.html and tracking.html to make them interactive.
+- Possibly fine-tune the TinyLlama model for better responses and deploy it on the cloud instead of running it locally.
 
 ---
 
 ## Credits
 Starter code: [supersimple.dev](https://github.com/SuperSimpleDev) <br>
 AI model: [TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+
 
