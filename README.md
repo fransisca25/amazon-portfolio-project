@@ -44,24 +44,26 @@ The AI chatbot acting as a simple customer service assistant.
     npm install
 
 3. **Set up environment variables**
-    Create a .env file in the server folder.
+
+   Create a .env file in the server folder.
 
    ```bash
     MONGODB_URI=your_mongodb_connection_string
 
-4. **Start the app**
+5. **Start the app**
 
    ```bash
     npm start
     node app.js
 
-5. **Sign up**
+6. **Sign up**
+
    Enter your name, email, and password for first login attempt! (First login only).
 
    ```bash
     curl -X POST http://localhost:5000/api/auth/signup -H "Content-Type: application/json" -d "{\"name\":\"ENTER YOUR NAME\",\"email\":\"ENTER YOUR EMAIL\",\"password\":\"ENTER YOUR PASSWORD\"}"
 
-6. **Run chatbot on streamlit**
+7. **Run chatbot on streamlit**
 
    ```bash
     streamlit run chatbot_app.py
@@ -85,6 +87,7 @@ YouTube video:
 ## Credits
 Starter code: [supersimple.dev](https://github.com/SuperSimpleDev) <br>
 AI model: [TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+
 
 
 
