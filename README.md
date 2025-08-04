@@ -55,7 +55,7 @@ The AI chatbot acting as a simple customer service assistant.
     npm start
     node app.js
 
-5. **Sign up **
+5. **Sign up**
    Enter your name, email, and password for first login attempt! (First login only).
 
    ```bash
@@ -85,5 +85,6 @@ YouTube video:
 ## Credits
 Starter code: [supersimple.dev](https://github.com/SuperSimpleDev) <br>
 AI model: [TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+
 
 
