@@ -25,7 +25,7 @@ if "messages" not in st.session_state:
 
 pipeline = load_pipeline()
 
-st.title("🤗 Dummy TinyLlama")
+st.title("🤗 Amazon Shop Assistant")
 st.write("Chat with our Amazon bot assistant! Type your message below.")
 
 # Chat input
