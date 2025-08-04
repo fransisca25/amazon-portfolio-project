@@ -1,6 +1,6 @@
 # 🛒 Amazon Clone with AI Chatbot
 
-A simple e-commerce website inspired by Amazon, with an integrated AI-powered chatbot assistant. Built using the starter template from [supersimple.dev](https://supersimple.dev), this project simulates a basic shopping experience, with added user login and conversational support.
+A simple e-commerce website inspired by Amazon, with an integrated AI-powered chatbot assistant. Built using the starter template from [supersimple.dev](https://supersimple.dev), this project simulates a basic shopping experience, with added user login and conversational support. Also included test code using Jasmine framework.
 
 ---
 
@@ -10,6 +10,7 @@ A simple e-commerce website inspired by Amazon, with an integrated AI-powered ch
 - 🔐 User login system using MongoDB
 - 🤖 AI chatbot assistant powered by TinyLlama
 - 🎨 Responsive UI with clean layout (HTML/CSS/JS)
+
 
 ---
 
@@ -87,6 +88,7 @@ YouTube video:
 ## Credits
 Starter code: [supersimple.dev](https://github.com/SuperSimpleDev) <br>
 AI model: [TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+
 
 
 
