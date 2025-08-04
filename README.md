@@ -74,5 +74,6 @@ The AI chatbot acting as a simple customer service assistant.
 ---
 
 ## Credits
-Starter code: [supersimple.dev](https://github.com/SuperSimpleDev)
+Starter code: [supersimple.dev](https://github.com/SuperSimpleDev) <br>
 AI model: [TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+
