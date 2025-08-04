@@ -1,6 +1,6 @@
-import { cart } from "../../../data/cart.js";
-import { renderOrderSummary } from "../../../scripts/checkout/orderSummary.js";
-import { loadProductsFetch } from "../../../data/products.js";
+import { cart } from "../../../client/data/cart.js";
+import { renderOrderSummary } from "../../../client/scripts/checkout/orderSummary.js";
+import { loadProductsFetch } from "../../../client/data/products.js";
 
 
 describe('test suite: renderOrderSummary', () => {

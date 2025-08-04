@@ -1,5 +1,5 @@
-import { cart } from "../../../data/cart.js";
-import { renderCheckoutHeader } from "../../../scripts/checkout/checkoutHeader.js";
+import { cart } from "../../../client/data/cart.js";
+import { renderCheckoutHeader } from "../../../client/scripts/checkout/checkoutHeader.js";
 
 describe('test suite: renderCheckoutHeader', () => {
     const productId = 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6';

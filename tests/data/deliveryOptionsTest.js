@@ -1,4 +1,4 @@
-import { getDeliveryOption, calculateDeliveryDate } from '../../data/deliveryOptions.js';
+import { getDeliveryOption, calculateDeliveryDate } from '../../client/data/deliveryOptions.js';
 
 
 describe('test suite: deliveryOptions related', () => {

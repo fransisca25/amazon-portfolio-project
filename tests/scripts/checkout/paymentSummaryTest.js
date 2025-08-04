@@ -1,7 +1,7 @@
-import { Product, products } from "../../../data/products.js";
-import { cart } from "../../../data/cart.js";
-import { renderPaymentSummary } from "../../../scripts/checkout/paymentSummary.js";
-import { loadProductsFetch } from '../../../data/products.js';
+import { Product, products } from "../../../client/data/products.js";
+import { cart } from "../../../client/data/cart.js";
+import { renderPaymentSummary } from "../../../client/scripts/checkout/paymentSummary.js";
+import { loadProductsFetch } from '../../../client/data/products.js';
 
 
 describe('test suite: paymentSummary', () => {

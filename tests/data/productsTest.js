@@ -1,4 +1,4 @@
-import { Product, Clothing, Appliance } from '../../data/products.js'
+import { Product, Clothing, Appliance } from '../../client/data/products.js'
 
 describe('test suite: Product class', () => {
     let product;
