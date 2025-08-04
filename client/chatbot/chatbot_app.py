@@ -41,6 +41,7 @@ if prompt := st.chat_input("May I Help You?"):
         with st.spinner("Thinking..."):
             try:
                 outputs = pipeline(
+                    prompt, 
                     max_new_tokens=256,  
                     do_sample=True,
                     temperature=0.7,
@@ -48,7 +49,7 @@ if prompt := st.chat_input("May I Help You?"):
                 )
                 
                 # Extract response
-                response = outputs[0]["generated_text"][-1]["content"]
+                response = outputs[0]["generated_text"].replace(prompt, "").strip()
                 st.write(response)
                 
                 st.session_state.messages.append({"role": "assistant", "content": response})
