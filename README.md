@@ -6,10 +6,10 @@ A simple e-commerce website inspired by Amazon, with an integrated AI-powered ch
 
 ## 🚀 Features
 
-- 🛍️ Product browsing and cart simulation
-- 🔐 User login system using MongoDB
-- 🤖 AI chatbot assistant powered by TinyLlama
-- 🎨 Responsive UI with clean layout (HTML/CSS/JS)
+- Product browsing and cart simulation
+- User login system using MongoDB
+- AI chatbot assistant powered by TinyLlama
+- Responsive UI with clean layout (HTML/CSS/JS)
 
 
 ---
@@ -87,6 +87,7 @@ YouTube video:
 ## Credits
 Starter code: [supersimple.dev](https://github.com/SuperSimpleDev) <br>
 AI model: [TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+
 
 
 
