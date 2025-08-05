@@ -1,8 +1,6 @@
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
 import { getProduct, loadProductsFetch } from './products.js';
 import { formatCurrency } from '../scripts/utils/money.js';
-import { cart } from './cart.js';
-
 
 
 loadProductsFetch().then(() => {
@@ -30,7 +28,6 @@ function saveToStorage() {
 }
 
 export function renderOrderGrid() {
-    console.log('orders:', orders);
     let orderHTML = '';
 
     orders.forEach((order) => {
@@ -91,7 +88,7 @@ export function renderOrderGrid() {
                     </div>
 
                     <div class="product-actions">
-                    <a href="tracking.html">
+                    <a href="tracking.html?productId=${product.productId}">
                         <button class="track-package-button button-secondary">
                         Track package
                         </button>
